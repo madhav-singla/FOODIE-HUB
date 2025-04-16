@@ -17,16 +17,14 @@ To set up the project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/foodie-hub.git
-
-
+   https://github.com/madhav-singla/Project-SCM.git
 
 ## 👥 Team Members
 - **Madhav Singla** – Project Owner  
-- **Mehak** – GitHub  
-- **Lakshay** – GitHub  
-- **Nakul** – GitHub  
-- **Manav** – GitHub  
+- **Mehak**  
+- **Lakshay**  
+- **Nakul**  
+- **Manav**  
 
 ## 📌 Project Status
 The project is currently in the **development phase**. Key functionalities being worked on include:

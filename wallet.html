@@ -24,9 +24,24 @@
         <div class="main-content">
             <h2 class="main-title">Wallet</h2>
             <div class="wallet-balance">
-                <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-                <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-                <script src="wallet.js"></script>
+                <h3>Current Balance: ₹<span id="balance">1500</span></h3>
+                <button class="wallet-btn" onclick="addMoney()">Add Money</button>
+                <button class="wallet-btn" onclick="withdrawMoney()">Withdraw Money</button>
+            </div>
+            <div class="transactions">
+                <h3>Recent Transactions</h3>
+                <ul class="transaction-list">
+                    <li>Order #12345 - ₹879 - Debit</li>
+                    <li>Added Money - ₹1000 - Credit</li>
+                    <li>Order #12344 - ₹729 - Debit</li>
+                    <li>Added Money - ₹500 - Credit</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="wallet.js"></script>
 </body>
 
 </html>

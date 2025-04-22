@@ -3,4 +3,5 @@ function addMoney() {
     if (amount && !isNaN(amount)) {
         const balanceElement = document.getElementById('balance');
         let currentBalance = parseFloat(balanceElement.innerText);
+        currentBalance += parseFloat(amount);
 }

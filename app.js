@@ -11,3 +11,6 @@ mobileLink.addEventListener("click",function(){
         mobile.classList.toggle("active")
     }
 })
+var step = 100;
+var stepFilter = 60;
+var scrolling = true;

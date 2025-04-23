@@ -20,3 +20,9 @@ $(".back").bind("click",function(e){
         scrollLeft: "-=" + step + "px"
     });
 });
+$(".next").bind("click",function(e){
+    e.preventDefault();
+    $(".highlight-wrapper").animate({
+        scrollLeft: "+=" + step + "px"
+    })
+})

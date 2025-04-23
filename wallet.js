@@ -4,4 +4,5 @@ function addMoney() {
         const balanceElement = document.getElementById('balance');
         let currentBalance = parseFloat(balanceElement.innerText);
         currentBalance += parseFloat(amount);
+        balanceElement.innerText = currentBalance;
 }

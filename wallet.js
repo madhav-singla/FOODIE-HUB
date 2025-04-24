@@ -11,3 +11,5 @@ function addMoney() {
         alert("Please enter a valid amount.");
     }
 }
+
+function withdrawMoney() {

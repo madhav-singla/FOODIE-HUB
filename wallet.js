@@ -6,6 +6,8 @@ function addMoney() {
         currentBalance += parseFloat(amount);
         balanceElement.innerText = currentBalance;
         updateTransactions(`Added Money - ₹${amount} - Credit`);
-    } else {
+    } 
+    else {
         alert("Please enter a valid amount.");
+    }
 }

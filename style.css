@@ -184,6 +184,69 @@ body{
     background-color: var(--secondaryColor);
 }
 
+.notification-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2%;
+    border-radius: 8px;
+    background-color: var(--whiteColor);
+}
+
+.notification-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.notification-icon {
+    font-size: 30px;
+    color: var(--secondaryColor);
+}
+
+.notification-text h4 {
+    margin-bottom: 0.5rem;
+}
+
+.notification-text p {
+    margin: 0;
+}
+
+.main-title {
+    margin-bottom: 2rem;
+    color: var(--primaryColor);
+}
+
+.notification-card:hover {
+    background-color: var(--secondaryColor);
+    color: var(--whiteColor);
+}
+
+.contact-wrapper {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: var(--whiteColor);
+}
+
+.contact-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--blackColor);
+}
 
 .main-content {
     padding: 2%;

@@ -25,7 +25,6 @@ function withdrawMoney() {
         }
     } else {
         alert("Please enter a valid amount.");
-
     }
 }
 
@@ -35,4 +34,3 @@ function updateTransactions(transaction) {
     newTransaction.innerText = transaction;
     transactionList.prepend(newTransaction);
 }
-

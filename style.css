@@ -43,3 +43,31 @@
 
 
 
+   .highlight-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.highlight-desc h4 {
+    color: var(--primaryColor);
+}
+
+.highlight-desc p {
+    color: var(--blackColor);
+    font-size: 13px;
+}
+
+.highlight-card:hover{
+    background-color: var(--whiteColor);
+    box-shadow: rgba(176,176,176,0.2);
+}
+
+.main-menu {
+    min-height: 100%;
+    background-color: rgb(236, 231, 231);
+    padding: 2%;
+    border-radius: 8px;
+}

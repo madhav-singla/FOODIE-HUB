@@ -38,3 +38,6 @@ $(".next-menus").bind("click",function(e){
         scrollLeft: "+=" + step + "px"
     });
 });
+const cart = [];
+const cartContainer = document.querySelector('.cart-items');
+const totalAmount = document.querySelector('.total-amount');

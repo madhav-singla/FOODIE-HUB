@@ -29,4 +29,8 @@ function withdrawMoney() {
 }
 
 function updateTransactions(transaction) {
+    const transactionList = document.querySelector('.transaction-list');
+    const newTransaction = document.createElement('li');
+    newTransaction.innerText = transaction;
+    transactionList.prepend(newTransaction);
 }

@@ -15,4 +15,14 @@ function addMoney() {
 function withdrawMoney() {
     const amount = prompt("Enter amount to withdraw:");
     if (amount && !isNaN(amount)) {
-        const balanceElement = document.getElementById('balance');
+        const balanceElement = document.getElementById('balance');let currentBalance = parseFloat(balanceElement.innerText);
+        if (currentBalance >= amount) {
+            currentBalance -= parseFloat(amount);
+            balanceElement.innerText = currentBalance;
+            updateTransactions(`Withdrawn Money - ₹${amount} - Debit`);
+        } else {
+            alert("Insufficient balance.");
+        }
+    } else {
+        alert("Please enter a valid amount.");
+    }

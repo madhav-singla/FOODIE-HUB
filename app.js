@@ -59,3 +59,8 @@ function updateCart() {
 }
 const addToCartButtons = document.querySelectorAll('.detail-card');
 addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const itemName = button.querySelector('h4').innerText;
+        const itemPrice = Number(button.querySelector('.price').innerText.replace('₹', ''));
+        addToCart(itemName, itemPrice);
+    });

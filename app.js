@@ -57,3 +57,5 @@ function updateCart() {
     });
     totalAmount.innerText = total;
 }
+const addToCartButtons = document.querySelectorAll('.detail-card');
+addToCartButtons.forEach(button => {

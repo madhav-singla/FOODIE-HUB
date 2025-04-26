@@ -6,12 +6,14 @@ function addMoney() {
         currentBalance += parseFloat(amount);
         balanceElement.innerText = currentBalance;
         updateTransactions(`Added Money - ₹${amount} - Credit`);
-    } 
-    else {
+    } else {
         alert("Please enter a valid amount.");
     }
 }
 
 function withdrawMoney() {
-    const amount = prompt("Enter amount to withdraw:");
-    if (amount && !isNaN(amount)) {
+
+}
+
+function updateTransactions(transaction) {
+}

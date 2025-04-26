@@ -28,4 +28,59 @@ $(".next").bind("click",function(e){
 })
 $(".back-menus").bind("click",function(e){
     e.preventDefault();
-    
+    $(".filter-wrapper").animate({
+        scrollLeft: "-=" + step + "px"
+    })
+});
+$(".next-menus").bind("click",function(e){
+    e.preventDefault();
+    $(".filter-wrapper").animate({
+        scrollLeft: "+=" + step + "px"
+    });
+});
+const cart = [];
+const cartContainer = document.querySelector('.cart-items');
+const totalAmount = document.querySelector('.total-amount');
+function addToCart(itemName, itemPrice) {
+    const item = { name: itemName, price: itemPrice };
+    cart.push(item);
+    updateCart();
+}
+function updateCart() {
+    cartContainer.innerHTML = '';
+    let total = 0;
+    cart.forEach((item, index) => {
+        const cartItem = document.createElement('li');
+        cartItem.innerHTML = `${item.name} - &#8377;${item.price}`;
+        cartContainer.appendChild(cartItem);
+        total += item.price;
+    });
+    totalAmount.innerText = total;
+}
+const addToCartButtons = document.querySelectorAll('.detail-card');
+addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const itemName = button.querySelector('h4').innerText;
+        const itemPrice = Number(button.querySelector('.price').innerText.replace('₹', ''));
+        addToCart(itemName, itemPrice);
+    });
+});
+const checkoutButton = document.querySelector('.checkout-btn');
+checkoutButton.addEventListener('click', () => {
+    alert('Thank you for your purchase!');
+    cart.length = 0; // Clear the cart
+    updateCart();
+});
+document.getElementById('search-btn').addEventListener('click', function() {
+    const query = document.querySelector('.search input').value.toLowerCase();
+    const items = document.querySelectorAll('.highlight-card, .detail-card');
+    items.forEach(item => {
+        const itemName = item.querySelector('h4').innerText.toLowerCase();
+        if (itemName.includes(query)) {
+            item.style.display = 'block';
+        }
+        else {
+            item.style.display = 'none';
+        }
+    });
+});

@@ -32,3 +32,9 @@ $(".back-menus").bind("click",function(e){
         scrollLeft: "-=" + step + "px"
     })
 });
+$(".next-menus").bind("click",function(e){
+    e.preventDefault();
+    $(".filter-wrapper").animate({
+        scrollLeft: "+=" + step + "px"
+    });
+});

@@ -26,3 +26,6 @@ $(".next").bind("click",function(e){
         scrollLeft: "+=" + step + "px"
     })
 })
+$(".back-menus").bind("click",function(e){
+    e.preventDefault();
+    

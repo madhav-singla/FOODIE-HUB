@@ -55,3 +55,5 @@ function updateCart() {
         cartContainer.appendChild(cartItem);
         total += item.price;
     });
+    totalAmount.innerText = total;
+}

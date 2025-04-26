@@ -23,7 +23,7 @@
  - **Madhav Singla** – Project Owner  
  - **Lakshay**  - Lead Developer
  - **Mehak**  - Feature Developer
- - **Nakul**  - Contributor
+ - **Nakul**  - Idea Engineer
  - **Manav**  - Contributor
  
  ## 📌 Project Status

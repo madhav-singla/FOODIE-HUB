@@ -64,3 +64,6 @@ addToCartButtons.forEach(button => {
         const itemPrice = Number(button.querySelector('.price').innerText.replace('₹', ''));
         addToCart(itemName, itemPrice);
     });
+});
+const checkoutButton = document.querySelector('.checkout-btn');
+checkoutButton.addEventListener('click', () => {

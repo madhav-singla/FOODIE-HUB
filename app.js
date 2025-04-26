@@ -82,3 +82,4 @@ document.getElementById('search-btn').addEventListener('click', function() {
         else {
             item.style.display = 'none';
         }
+    });

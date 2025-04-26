@@ -76,3 +76,6 @@ document.getElementById('search-btn').addEventListener('click', function() {
     const items = document.querySelectorAll('.highlight-card, .detail-card');
     items.forEach(item => {
         const itemName = item.querySelector('h4').innerText.toLowerCase();
+        if (itemName.includes(query)) {
+            item.style.display = 'block';
+        }

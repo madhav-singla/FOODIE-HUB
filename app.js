@@ -83,4 +83,11 @@ document.getElementById('search-btn').addEventListener('click', function() {
             item.style.display = 'none';
         }
     });
+    if (itemName.includes(query)) {
+        item.style.display = 'block';
+    }
+    else {
+        item.style.display = 'none';
+    }
+});
 });

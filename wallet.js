@@ -14,3 +14,4 @@ function addMoney() {
 
 function withdrawMoney() {
     const amount = prompt("Enter amount to withdraw:");
+    if (amount && !isNaN(amount)) {

@@ -74,3 +74,5 @@ checkoutButton.addEventListener('click', () => {
 document.getElementById('search-btn').addEventListener('click', function() {
     const query = document.querySelector('.search input').value.toLowerCase();
     const items = document.querySelectorAll('.highlight-card, .detail-card');
+    items.forEach(item => {
+        const itemName = item.querySelector('h4').innerText.toLowerCase();

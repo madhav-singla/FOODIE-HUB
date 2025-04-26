@@ -79,3 +79,6 @@ document.getElementById('search-btn').addEventListener('click', function() {
         if (itemName.includes(query)) {
             item.style.display = 'block';
         }
+        else {
+            item.style.display = 'none';
+        }

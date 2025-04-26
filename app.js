@@ -46,3 +46,7 @@ function addToCart(itemName, itemPrice) {
     cart.push(item);
     updateCart();
 }
+function updateCart() {
+    cartContainer.innerHTML = '';
+    let total = 0;
+    cart.forEach((item, index) => {

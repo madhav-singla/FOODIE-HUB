@@ -69,7 +69,7 @@ const checkoutButton = document.querySelector('.checkout-btn');
 checkoutButton.addEventListener('click', () => {
     alert('Thank you for your purchase!');
     cart.length = 0; // Clear the cart
-
+    cart.length = 0;
 });
 document.getElementById('search-btn').addEventListener('click', function() {
     const query = document.querySelector('.search input').value.toLowerCase();

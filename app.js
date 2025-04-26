@@ -50,3 +50,8 @@ function updateCart() {
     cartContainer.innerHTML = '';
     let total = 0;
     cart.forEach((item, index) => {
+        const cartItem = document.createElement('li');
+        cartItem.innerHTML = `${item.name} - &#8377;${item.price}`;
+        cartContainer.appendChild(cartItem);
+        total += item.price;
+    });

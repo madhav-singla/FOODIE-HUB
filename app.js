@@ -28,4 +28,7 @@ $(".next").bind("click",function(e){
 })
 $(".back-menus").bind("click",function(e){
     e.preventDefault();
-    
+    $(".filter-wrapper").animate({
+        scrollLeft: "-=" + step + "px"
+    })
+});

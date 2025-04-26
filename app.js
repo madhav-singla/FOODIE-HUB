@@ -71,3 +71,6 @@ checkoutButton.addEventListener('click', () => {
     cart.length = 0; // Clear the cart
     updateCart();
 });
+document.getElementById('search-btn').addEventListener('click', function() {
+    const query = document.querySelector('.search input').value.toLowerCase();
+    const items = document.querySelectorAll('.highlight-card, .detail-card');

@@ -67,3 +67,7 @@ addToCartButtons.forEach(button => {
 });
 const checkoutButton = document.querySelector('.checkout-btn');
 checkoutButton.addEventListener('click', () => {
+    alert('Thank you for your purchase!');
+    cart.length = 0; // Clear the cart
+    updateCart();
+});

@@ -41,3 +41,8 @@ $(".next-menus").bind("click",function(e){
 const cart = [];
 const cartContainer = document.querySelector('.cart-items');
 const totalAmount = document.querySelector('.total-amount');
+function addToCart(itemName, itemPrice) {
+    const item = { name: itemName, price: itemPrice };
+    cart.push(item);
+    updateCart();
+}

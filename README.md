@@ -21,8 +21,8 @@
  
  ## 👥 Team Members
  - **Madhav Singla** – Project Owner  
- - **Mehak**  - UI developer
- - **Lakshay**  - Javascript developer
+ - **Lakshay**  - Lead Developer
+ - **Mehak**  - Feature Developer
  - **Nakul**  - Contributor
  - **Manav**  - Contributor
  

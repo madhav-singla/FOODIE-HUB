@@ -21,10 +21,10 @@
  
  ## 👥 Team Members
  - **Madhav Singla** – Project Owner  
- - **Lakshay**  - Lead Developer
- - **Mehak**  - Feature Developer
- - **Nakul**  - Idea Engineer
- - **Manav**  - Contributor
+ - **Lakshay** - Lead Developer
+ - **Mehak** - Feature Developer
+ - **Nakul** - Idea Engineer
+ - **Manav** - Contributor
  
  ## 📌 Project Status
  The project is currently in the **development phase**. Key functionalities being worked on include:

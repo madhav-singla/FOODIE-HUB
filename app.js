@@ -69,7 +69,7 @@ const checkoutButton = document.querySelector('.checkout-btn');
 checkoutButton.addEventListener('click', () => {
     alert('Thank you for your purchase!');
     cart.length = 0; // Clear the cart
-    updateCart();
+    cart.length = 0;
 });
 document.getElementById('search-btn').addEventListener('click', function() {
     const query = document.querySelector('.search input').value.toLowerCase();
@@ -83,4 +83,11 @@ document.getElementById('search-btn').addEventListener('click', function() {
             item.style.display = 'none';
         }
     });
+    if (itemName.includes(query)) {
+        item.style.display = 'block';
+    }
+    else {
+        item.style.display = 'none';
+    }
+});
 });
